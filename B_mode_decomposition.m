@@ -1,10 +1,10 @@
-% load('Data\DadesPlymouth\Signal\CombinedDataDade.mat')
-% [imf_AD, imf_CR]=decompose_memd(data_AD, data_CR);
-% if ~exist(['EnhData\Dataset_1\Signal\'],'dir')
-%     mkdir(['EnhData\Dataset_1\Signal\'])
-% end
-% save('EnhData\Dataset_1\Signal\DecomposedIMFs_MEMD.mat', 'imf_AD', 'imf_CR');
-% clc;clear;
+load('Data\DadesPlymouth\Signal\CombinedDataDade.mat')
+[imf_AD, imf_CR]=decompose_memd(data_AD, data_CR);
+if ~exist(['EnhData\Dataset_1\Signal\'],'dir')
+    mkdir(['EnhData\Dataset_1\Signal\'])
+end
+save('EnhData\Dataset_1\Signal\DecomposedIMFs_MEMD.mat', 'imf_AD', 'imf_CR');
+clc;clear;
 
 load('Data\DadesPlymouth\Signal\CombinedDataDade.mat')
 [imf_AD, imf_CR]=decompose_semd(data_AD, data_CR);
