@@ -135,7 +135,7 @@ function generate_artifact_dataset2()
         mkdir("EnhData/Dataset_2/SplitData/")
     catch
     end
-    for i in 8:10
+    for i in 1:10
         train_ind_AD, test_ind_AD, train_ind_CR, test_ind_CR=generate_index(data_AD,data_CR,i)
         train_AD, test_AD=generate_realcols(data_AD, train_ind_AD, test_ind_AD)
         train_CR, test_CR=generate_realcols(data_CR, train_ind_CR, test_ind_CR)
@@ -181,5 +181,5 @@ function generate_artifact_dataset2()
     end
 end
 
-# generate_artifact_dataset1()
+generate_artifact_dataset1()
 generate_artifact_dataset2()
